@@ -16,7 +16,7 @@ import routes from './routes';
 app.use('/api', routes);
 
 app.all('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname + '/../public/index.html'));
+  res.sendFile(path.resolve(__dirname + '/index.html'));
 });
 
 app.listen(3000);

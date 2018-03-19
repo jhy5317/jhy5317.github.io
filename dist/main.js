@@ -32,7 +32,7 @@ app.use(_bodyParser2.default.urlencoded({ extended: false }));
 app.use('/api', _routes2.default);
 
 app.all('*', function (req, res) {
-  res.sendFile(_path2.default.resolve(__dirname + '/../public/index.html'));
+  res.sendFile(_path2.default.resolve(__dirname + '/index.html'));
 });
 
 app.listen(3000);
